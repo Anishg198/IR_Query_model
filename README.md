@@ -46,7 +46,8 @@ We use the **lnc.ltc weighting scheme**:
 ## 📂 Project Structure
 
 IR_Query_model/
-├── indexer.py # builds index.pkl and corpus.pkl
+
+├── indexer.py- builds index.pkl and corpus.pkl
 ├── searcher.py # core retrieval engine (VSM + Soundex + WordNet)
 ├── interactive.py # interactive console to type queries
 ├── run_example.py # example run with preset queries
@@ -102,17 +103,18 @@ handles typos and spelling variations.
 ### WordNet Synonym Expansion →  
 improves recall by retrieving semantically related docs.
 
-### Boosting Heuristics → titles, 
-phrases, and proximity are rewarded.
+### Boosting Heuristics →
+titles, phrases, and proximity are rewarded.
 
-### Color-coded Output → improves readability in terminal:
+### Color-coded Output →  
+improves readability in terminal:
 
 synonms = yellow
 Doc names=bold
 matching words = green
 
-### Interactive Console → lets you 
-search dynamically without rerunning scripts.
+### Interactive Console → 
+lets you search dynamically without rerunning scripts.
 
 ### Line-level Snippets → shows
 the most relevant lines instead of whole docs.
