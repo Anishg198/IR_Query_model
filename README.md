@@ -36,7 +36,7 @@ w(q,t) = (1 + log10(tf_q,t)) * log10(N / df_t)
 
 ## 📂 Project Structure
 
-IR_Query_model/<br>
+IR_Query_model<br>
 
 | File/Folder      | Description                                      |
 |------------------|--------------------------------------------------|
