@@ -11,7 +11,7 @@ from utils import tokenize
 from soundex import soundex
 
 try:
-    from nltk.corpus import wordnet as wn
+    from nltk.corpus import wordnet as wn # type: ignore
 except Exception:
     wn = None
 
