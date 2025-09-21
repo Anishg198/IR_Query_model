@@ -86,7 +86,7 @@ Compared to a basic VSM implementation, this project adds:
 - **Color-coded Output** → improves readability in terminal:  
   - Headlines = **bold**  
   - Matching words = **green**  
-  - Synonyms = **green**  
+  - Synonyms = **yellow**  
 - **Interactive Console** → lets you search dynamically without rerunning scripts.  
 - **Line-level Snippets** → shows the most relevant lines instead of whole documents.  
 
