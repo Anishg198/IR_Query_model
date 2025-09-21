@@ -45,7 +45,16 @@ We use the **lnc.ltc weighting scheme**:
 
 ## 📂 Project Structure
 
-
+IR_Query_model/
+├── indexer.py # builds index.pkl and corpus.pkl
+├── searcher.py # core retrieval engine (VSM + Soundex + WordNet)
+├── interactive.py # interactive console to type queries
+├── run_example.py # example run with preset queries
+├── utils.py # tokenizer and helper functions
+├── soundex.py # Soundex implementation
+├── index.pkl # built index (after running indexer)
+├── corpus.pkl # serialized corpus (after running indexer)
+└── README.md # this file
 ---
 
 ## 🚀 How to Run
@@ -58,3 +67,52 @@ pip install nltk colorama
 import nltk
 nltk.download('wordnet')
 nltk.download('omw-1.4')
+
+```
+### 2. Build index
+```bash
+python indexer.py
+```
+### 3. Run interactive search
+```bash
+python interactive.py
+```
+
+### Sample Session
+```bash
+🔎 interactive VSM searcher
+type a query and press enter (type 'exit' or 'quit' to stop)
+
+query > gold price
+
+1. BELGIUM LAUNCHES BONDS WITH GOLD WARRANTS (score=0.2646) [test/15471]
+   line 3: The Kingdom of Belgium is launching 100 mln Swiss francs of seven ...
+
+2. CRA SOLD FORREST GOLD FOR 76 MLN DLRS (score=0.2139) [test/14865]
+   line 1: CRA sold Forrest [92mGOLD[0m for 76 mln dollars ...
+```
+
+## 🆚 Novelty Beyond Assignment Requirements
+
+Compared to a basic VSM implementation, this project adds several novel features:
+
+### Soundex Fuzzy Matching → 
+handles typos and spelling variations.
+
+### WordNet Synonym Expansion →  
+improves recall by retrieving semantically related docs.
+
+### Boosting Heuristics → titles, 
+phrases, and proximity are rewarded.
+
+### Color-coded Output → improves readability in terminal:
+
+synonms = yellow
+Doc names=bold
+matching words = green
+
+### Interactive Console → lets you 
+search dynamically without rerunning scripts.
+
+### Line-level Snippets → shows
+the most relevant lines instead of whole docs.
