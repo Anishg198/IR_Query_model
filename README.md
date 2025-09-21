@@ -37,7 +37,7 @@ w(q,t) = (1 + log10(tf_q,t)) * log10(N / df_t)
 ## 📂 Project Structure
 
 IR_Query_model/<br>
-├── indexer.py        # builds index.pkl and corpus.pkl<br>
+├── indexer.py                      # builds index.pkl and corpus.pkl<br>
 ├── searcher.py       # core retrieval engine (VSM + Soundex + WordNet)<br>
 ├── interactive.py    # interactive console to type queries<br>
 ├── run_example.py    # example run with preset queries<br>
@@ -85,8 +85,8 @@ Compared to a basic VSM implementation, this project adds:
 - **Boosting Heuristics** → titles, phrases, and proximity are rewarded.  
 - **Color-coded Output** → improves readability in terminal:  
   - Headlines = **bold**  
-  - Matching words = **green**  
-  - Synonyms = **yellow**  
+  - Matching words = **🟩 green**  
+  - Synonyms = **🟨 yellow**  
 - **Interactive Console** → lets you search dynamically without rerunning scripts.  
 - **Line-level Snippets** → shows the most relevant lines instead of whole documents.  
 
