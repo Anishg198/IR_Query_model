@@ -37,15 +37,15 @@ w(q,t) = (1 + log10(tf_q,t)) * log10(N / df_t)
 ## 📂 Project Structure
 
 IR_Query_model/
-├── indexer.py        # builds index.pkl and corpus.pkl
-├── searcher.py       # core retrieval engine (VSM + Soundex + WordNet)
-├── interactive.py    # interactive console to type queries
-├── run_example.py    # example run with preset queries
-├── utils.py          # tokenizer and helper functions
-├── soundex.py        # Soundex implementation
-├── index.pkl         # built index (after running indexer)
-├── corpus.pkl        # serialized corpus (after running indexer)
-└── README.md         # this file
+├── indexer.py        # builds index.pkl and corpus.pkl<br>
+├── searcher.py       # core retrieval engine (VSM + Soundex + WordNet)<br>
+├── interactive.py    # interactive console to type queries<br>
+├── run_example.py    # example run with preset queries<br>
+├── utils.py          # tokenizer and helper functions<br>
+├── soundex.py        # Soundex implementation<br>
+├── index.pkl         # built index (after running indexer)<br>
+├── corpus.pkl        # serialized corpus (after running indexer)<br>
+└── README.md         # this file<br>
 
 ## 🚀 How to Run
 
@@ -90,6 +90,6 @@ Compared to a basic VSM implementation, this project adds:
 - **Interactive Console** → lets you search dynamically without rerunning scripts.  
 - **Line-level Snippets** → shows the most relevant lines instead of whole documents.  
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
-Built by *Anish Gupta* as part of **Lab 1 — VSM Information Retrieval** project.
+Built by *Anish Gupta*,*Prakhar Sethi* and *Ritwik Bhattacharya* as part of **Lab 1 — VSM Information Retrieval** assignment.
