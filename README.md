@@ -37,15 +37,6 @@ w(q,t) = (1 + log10(tf_q,t)) * log10(N / df_t)
 ## 📂 Project Structure
 
 IR_Query_model/<br>
-├── indexer.py        # builds index.pkl and corpus.pkl<br>
-├── searcher.py       # core retrieval engine (VSM + Soundex + WordNet)<br>
-├── interactive.py    # interactive console to type queries<br>
-├── run_example.py    # example run with preset queries<br>
-├── utils.py          # tokenizer and helper functions<br>
-├── soundex.py        # Soundex implementation<br>
-├── index.pkl         # built index (after running indexer)<br>
-├── corpus.pkl        # serialized corpus (after running indexer)<br>
-└── README.md         # this file<br>
 
 | File/Folder      | Description                                      |
 |------------------|--------------------------------------------------|
