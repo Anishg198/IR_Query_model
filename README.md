@@ -1,6 +1,6 @@
-# 🔎 VSM Search Engine (lnc.ltc + Soundex + WordNet)
+# 🔎 VSM Search Engine (lnc.ltc + Soundex + WordNet) for IR assignment
 
-This project implements a **Vector Space Model (VSM)** search engine over the [Reuters-21578 dataset](https://archive.ics.uci.edu/ml/datasets/reuters-21578+text+categorization+collection).  
+This assignment implements a **Vector Space Model (VSM)** search engine over the [Reuters-21578 dataset](https://archive.ics.uci.edu/ml/datasets/reuters-21578+text+categorization+collection).  
 It supports **interactive querying** with highlighting, synonym expansion, and fuzzy matching.
 
 ## 📐 Retrieval Model
@@ -36,7 +36,7 @@ w(q,t) = (1 + log10(tf_q,t)) * log10(N / df_t)
 
 ## 📂 Project Structure
 
-IR_Query_model/
+IR_Query_model/<br>
 ├── indexer.py        # builds index.pkl and corpus.pkl<br>
 ├── searcher.py       # core retrieval engine (VSM + Soundex + WordNet)<br>
 ├── interactive.py    # interactive console to type queries<br>
@@ -47,7 +47,7 @@ IR_Query_model/
 ├── corpus.pkl        # serialized corpus (after running indexer)<br>
 └── README.md         # this file<br>
 
-## 🚀 How to Run
+## 🚀 Running model
 
 1. Install dependencies
    pip install nltk colorama
@@ -92,4 +92,4 @@ Compared to a basic VSM implementation, this project adds:
 
 ## 👨‍💻 Authors
 
-Built by *Anish Gupta*,*Prakhar Sethi* and *Ritwik Bhattacharya* as part of **Lab 1 — VSM Information Retrieval** assignment.
+Built by *Anish Gupta*, *Prakhar Sethi* and *Ritwik Bhattacharya* as part of **Lab 1 — VSM Information Retrieval** assignment.
